@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearValFragment">
+
+    <EditText
+        android:id="@+id/nombre22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="48dp"
+        android:textSize="32sp"/>
+    <EditText
+        android:id="@+id/descripcion22"
+        android:layout_width="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_height="wrap_content"
+        android:hint="Descipción"
+        android:textSize="32sp"/>
+    <Button
+        android:id="@+id/crear22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="CREAR"
+        android:textSize="32sp"/>
+
+</FrameLayout>

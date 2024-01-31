@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recyclerElementosFragment"
+        android:icon="@android:drawable/ic_input_get"
+        android:iconTint="@color/black"
+        android:title="Elementos" />
+
+    <item
+        android:id="@+id/recyclerBuscarFragment"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Buscar Personajes" />
+
+    <item
+        android:id="@+id/recyclerDiferenciasMangaAnime"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Diferencias" />
+
+</menu>

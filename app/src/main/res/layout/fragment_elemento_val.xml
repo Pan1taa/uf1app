@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    tools:context=".ElementoValFragment">
+
+    <TextView
+        android:id="@+id/nombre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        tools:text="Nombre"/>
+
+    <RatingBar
+        android:id="@+id/valoracion2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        tools:rating="0.0"/>
+
+    <TextView
+        android:id="@+id/descripcion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="35dp"
+        tools:text="Descipción"/>
+
+
+
+</FrameLayout>

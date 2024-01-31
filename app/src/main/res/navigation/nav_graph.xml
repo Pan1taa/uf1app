@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerElementosFragment">
+
+    <fragment
+        android:id="@+id/recyclerElementosFragment"
+        android:name="com.company.room.RecyclerElementosFragment"
+        android:label="fragment_recycler_elementos"
+        tools:layout="@layout/fragment_recycler_elementos" />
+    <fragment
+        android:id="@+id/recyclerDiferenciasMangaAnimeFragment"
+        android:name="com.company.room.RecyclerDiferenciasMangaAnimeFragment"
+        android:label="RecyclerValoracionFragment"
+        tools:layout="@layout/fragment_recycler_elementos" />
+    <fragment
+        android:id="@+id/recyclerBuscarFragment"
+        android:name="com.company.room.RecyclerBuscarFragment"
+        android:label="RecyclerBuscarFragment"
+        tools:layout="@layout/fragment_recycler_elementos" />
+
+    <action
+        android:id="@+id/action_mostrarElementoFragment"
+        app:destination="@id/mostrarElementoFragment" />
+    <action
+        android:id="@+id/action_nuevoElementoFragment"
+        app:destination="@id/nuevoElementoFragment" />
+
+    <fragment
+        android:id="@+id/nuevoElementoFragment"
+        android:name="com.company.room.NuevoElementoFragment"
+        android:label="fragment_nuevo_elementok"
+        tools:layout="@layout/fragment_nuevo_elemento" />
+    <fragment
+        android:id="@+id/mostrarElementoFragment"
+        android:name="com.company.room.MostrarElementoFragment"
+        android:label="fragment_mostrar_elemento"
+        tools:layout="@layout/fragment_mostrar_elemento" />
+    <fragment
+        android:id="@+id/drawer1Fragment"
+        android:name="com.company.room.Drawer1Fragment"
+        android:label="fragment_drawer1"
+        tools:layout="@layout/fragment_drawer1" >
+        <action
+            android:id="@+id/action_drawer1Fragment_to_elementoValFragment"
+            app:destination="@id/elementoValFragment" />
+        <action
+            android:id="@+id/action_drawer1Fragment_to_crearValFragment"
+            app:destination="@id/crearValFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawer2Fragment"
+        android:name="com.company.room.Drawer2Fragment"
+        android:label="fragment_drawer2"
+        tools:layout="@layout/fragment_drawer2" />
+    <fragment
+        android:id="@+id/drawer3Fragment"
+        android:name="com.company.room.Drawer3Fragment"
+        android:label="fragment_drawer3"
+        tools:layout="@layout/fragment_drawer3" />
+    <fragment
+        android:id="@+id/elementoValFragment"
+        android:name="com.company.room.ElementoValFragment"
+        android:label="fragment_elemento_val"
+        tools:layout="@layout/fragment_elemento_val" />
+    <fragment
+        android:id="@+id/crearValFragment"
+        android:name="com.company.room.CrearValFragment"
+        android:label="fragment_crear_val"
+        tools:layout="@layout/fragment_crear_val" />
+</navigation>
